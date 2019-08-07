@@ -13,3 +13,14 @@ This repo holds the first ten Java labs.
 * https://stackoverflow.com/questions/24894501/java-timer-every-x-seconds/24895050
 * https://github.com/codefellows/seattle-java-401d5/blob/master/class-01/demo/Ginger.java
 
+## Lab 02 Java Library
+### Main.java
+1. Methods Used
+* roll
+* containsDuplicates
+* average
+* lowestArrayAverage
+2. Resources
+* Classmates
+* TA/Instructors
+
