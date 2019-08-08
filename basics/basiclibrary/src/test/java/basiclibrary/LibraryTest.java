@@ -6,59 +6,88 @@ package basiclibrary;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
 public class LibraryTest {
 
 
-    @Test public void testRoll() {
+//    @Test public void testRoll() {
+//
+//        assertTrue("someLibraryMethod should return 'true'", Library.roll(5).length == 5);
+//    }
+//
+//    @Test public void testContainsDuplicates(){
+//        int[] trueArray = {1,2,3,3};
+//
+//        assertTrue(Library.containsDuplicates(trueArray));
+//
+//    }
+//    @Test public void testContainsDuplicates_false(){
+//
+//        int[] falseArray = {1,2,3,4};
+//
+//        assertTrue(!Library.containsDuplicates(falseArray));
+//    }
+//
+//    @Test public void testAverage(){
+//
+//        int[] trueArray = {2,2,2,2};
+//        int[] trueArrayAgain = {2,4};
+//        assertTrue(Library.average(trueArray)==2.00);
+//        assertTrue(Library.average(trueArrayAgain)==3);
+//    }
+//    @Test public void testAverage_false(){
+//
+//        int[] falseArray = {2,2,2,8};
+//        int[] falseArrayAgain = {2,5};
+//        assertTrue(Library.average(falseArray)!=2.00);
+//        assertTrue(Library.average(falseArrayAgain)!=3);
+//    }
+//
+//    @Test public void testLowestArrayAverage(){
+//        int[][] arrayOfArrays = {
+//                {10, 10, 10},
+//                {57, 65, 65},
+//                {5, 5, 6},
+//                {65, 56, 55}
+//        };
+//
+//        int[] lowestArray = {5,5,6};
+//
+//        assertArrayEquals(lowestArray,Library.lowestArrayAverage(arrayOfArrays));
+//
+//    }
 
-        assertTrue("someLibraryMethod should return 'true'", Library.roll(5).length == 5);
-    }
-
-    @Test public void testContainsDuplicates(){
-        int[] trueArray = {1,2,3,3};
-
-        assertTrue(Library.containsDuplicates(trueArray));
-
-    }
-    @Test public void testContainsDuplicates_false(){
-
-        int[] falseArray = {1,2,3,4};
-
-        assertTrue(!Library.containsDuplicates(falseArray));
-    }
-
-    @Test public void testAverage(){
-
-        int[] trueArray = {2,2,2,2};
-        int[] trueArrayAgain = {2,4};
-        assertTrue(Library.average(trueArray)==2.00);
-        assertTrue(Library.average(trueArrayAgain)==3);
-    }
-    @Test public void testAverage_false(){
-
-        int[] falseArray = {2,2,2,8};
-        int[] falseArrayAgain = {2,5};
-        assertTrue(Library.average(falseArray)!=2.00);
-        assertTrue(Library.average(falseArrayAgain)!=3);
-    }
-
-    @Test public void testLowestArrayAverage(){
-        int[][] arrayOfArrays = {
-                {10, 10, 10},
-                {57, 65, 65},
-                {5, 5, 6},
-                {65, 56, 55}
+    @Test public void testMinMaxTemp(){
+        int[][] weeklyMonthTemperatures = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
         };
+        String result = "High: 72 Low: 51 Never saw temperature: 67 Never saw temperature: 68 Never saw temperature: 69 Never saw temperature: 63 ";
 
-        int[] lowestArray = {5,5,6};
 
-        assertArrayEquals(lowestArray,Library.lowestArrayAverage(arrayOfArrays));
+        assertTrue(Library.minMaxTemp(weeklyMonthTemperatures).equals(result));
 
     }
+    @Test public void testTally(){
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
 
+        assertTrue(Library.tally(votes).equals("Bush received the most votes!"));
+    }
 
 }
