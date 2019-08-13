@@ -41,3 +41,7 @@ This repo holds the first ten Java labs.
 * https://crunchify.com/how-to-iterate-through-java-list-4-way-to-iterate-through-loop/
 * https://stackoverflow.com/questions/20576839/how-to-print-out-a-hashset
 * https://www.callicoder.com/java-hashset/
+
+## Lab 04 Inheritence & Interfaces
+[Link to Directory](https://github.com/trevorjdobson/java-fundamentals/tree/master/inheritence)
+
