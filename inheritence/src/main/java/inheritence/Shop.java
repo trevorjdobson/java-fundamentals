@@ -1,10 +1,10 @@
 package inheritence;
 
-public class Restaurant extends Business{
-
-
-    Restaurant(String name, double stars, int price) {
+public class Shop extends Business{
+    String description;
+    Shop(String name, String description, double stars, int price) {
         super(name, stars, price);
+        this.description = description;
     }
     public String toString(){
         String dollars = null;
@@ -16,7 +16,7 @@ public class Restaurant extends Business{
                 :  "$$$$$";
 
         String stars = Double.toString(this.stars);
-        String output = this.name + " restaurant has a " + stars + " star rating and a price rating of: " + dollars + " with " + this.reviewsList.size() + " reviews.";
+        String output = this.name + " is a  " + this.description + " store with a " + stars + " star rating and a price rating of: " + dollars + " with " + this.reviewsList.size() + " reviews.";
 
         return output;
     }
@@ -29,5 +29,4 @@ public class Restaurant extends Business{
         }
         this.stars = stars/this.reviewsList.size();
     }
-
 }

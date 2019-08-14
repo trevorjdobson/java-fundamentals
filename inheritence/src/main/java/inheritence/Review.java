@@ -4,18 +4,18 @@ public class Review {
     String body;
     String author;
     int stars;
-    Restaurant restaurant;
+    Business business;
 
-    Review(String body, String author, int stars, Restaurant restaurant){
+    Review(String body, String author, int stars, Business business){
         this.body = body;
         this.author = author;
         this.stars = stars;
-        this.restaurant = restaurant;
+        this.business = business;
 
     }
 
     public String toString(){
 
-        return this.author + " gave " + this.restaurant.name + " " + this.stars + " stars and wrote " + this.body;
+        return this.author + " gave " + this.business.name + " " + this.stars + " stars and wrote " + this.body;
     }
 }
