@@ -4,11 +4,16 @@
 package inheritence;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
 import static org.junit.Assert.*;
 
+@RunWith(Suite.class)
+@Suite.SuiteClasses({RestaurantTest.class,ReviewTest.class,ShopTest.class,TheaterTest.class})
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
+//    @Test public void testSomeLibraryMethod() {
+////        Library classUnderTest = new Library();
+////        assertTrue(true);
+//    }
 }

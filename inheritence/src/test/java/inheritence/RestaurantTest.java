@@ -21,7 +21,7 @@ public class RestaurantTest {
 
     @Test
     public void testToString() {
-        String expected = "Bills restaurant has a 2.0 star rating and a price rating of: $$$";
+        String expected = "Bills restaurant has a 2.0 star rating and a price rating of: $$$ with 0 reviews.";
         System.out.println(testRestaurant.toString());
         assertTrue(expected.equals(testRestaurant.toString()));
     }
